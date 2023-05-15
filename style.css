@@ -1,0 +1,490 @@
+@import url(./font.css);
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+header {
+	width: 100%;
+	height: 15%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: white;
+}
+
+.headerInner {
+	width: 95%;
+	height: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 5%;
+	height: 65%;
+}
+
+.logo > img{
+
+	width: 100%;
+	height: 100%;
+}
+
+nav{
+	width: 35%;
+	height: 100%;
+}
+
+.headerMenu {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+	font-family:'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.language {
+	background-image: url(./img/united-kingdom.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: block;
+	width: 30px;
+	height: 25px;
+}
+
+.bookBtn {
+	position: relative;
+	right: 2.5%;
+	width: 15%;
+	height: 65%;
+	background-color: #5B6460;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bookBtn > a{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	font-family:'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+main{
+	width: 100%;
+	height: auto;
+}
+
+.mainIntro {
+	width: 100%;
+	height: 95vh;
+	background-color: aquamarine;
+	background-image: url(./img/intro.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.introInner {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.35);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	box-sizing: border-box;
+	padding: 5em 5em;
+	position: relative;
+}
+
+.introHeading {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 70px;
+	margin: 0;
+}
+
+.introParagraph {
+	position: absolute;
+   top: 30%;
+   left: 62.88%;
+	font-family:'Mulish', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	line-height: 28px;
+}
+
+ .arrowPlaceholder {
+	position: absolute;
+	top: 90%;
+	right: 47%;
+	width: 8%;
+	display: flex;
+	justify-content: space-between;
+ }
+
+ .rightArrow {
+	transform: rotate(180deg);
+ }
+
+ .mainCabins {
+	height: 130vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+ }
+
+ .cabinsUpper {
+	font-family:'Open Sans', sans-serif;
+	width: 100%;
+	height: 45%;
+	display: flex;
+	justify-content: flex-end;
+ }
+
+ .cabinsUpperParagraph {
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+	/*padding: 2em 3.5em;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+ }
+
+ .cabinsUpperParagraph > h2 , .mainForestParagraph > h2 {
+	font-size: 40px;
+	font-weight: 400;
+	color: #5B6460;
+ }
+
+ .cabinsUpperParagraph > p , .mainForestParagraph > p{
+	font-size: 16px;
+	font-weight: 300;
+	width: 60%;
+	color: black;
+ }
+
+ .cabinsUpperParagraph > a , .mainForestParagraph > a{
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #5B6460;
+ }
+
+ .cabinsUpperParagraph > a > span , .mainForestParagraph > a > span {
+	content: "";
+	display: block;
+	background-color: #5B6460;
+	width: 80px;
+	height: 2px;
+ }
+
+ .cabinsUpperImage {
+	width: 45%;
+	height: 100%;
+	background-image: url(./img/cabinsUpper.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+ }
+
+ .cabinsLower {
+	width: 92%;
+	height: 32%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+ }
+
+ .cabinsLower > img {
+	width: 32%;
+	height: 115%;
+ }
+
+ .mainForest {
+	background-color: #E9ECE0;
+	width: 100%;
+	height: 80vh;
+	display: flex;
+ }
+
+ .mainForestImg {
+	width: 50%;
+	height: 100%;
+	background-image: url(./img/forest.png);
+	background-size: cover;
+	background-position: 0%;
+	background-repeat: no-repeat;
+ }
+
+ .forestImgInner {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: rgba(0,0,0,.15);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+
+ .forestImgInner > div {
+	height: 30%;
+	width: 25%;
+	background-color: rgba(255, 255, 255, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	bottom: 1em;
+	right: 3em;
+	border-radius: 50%;
+ }
+
+ .forestImgInner > div > div {
+	height: 75%;
+	width: 75%;
+	background-color: rgba(255, 255, 255, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+ }
+
+ .forestImgInner > div > div > div {
+	height: 70%;
+	width: 70%;
+	background-color: rgba(255, 255, 255, 1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+
+	font-size: 12px;
+	font-family:'Open Sans', sans-serif;
+	text-align: center;
+	line-height: 16px;
+	color: #333333;
+ }
+
+ .mainForestParagraph {
+	width: 50%;
+	height: 60%;
+	box-sizing: border-box;
+	padding: 4em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family:'Open Sans', sans-serif;
+	line-height: 20px;
+	color: #333333;
+ }
+
+ .mainFacilities {
+	width: 100%;
+	height: 70vh;
+	background-color: #5B6460;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	font-family:'Open Sans', sans-serif;
+	color: white;
+ }
+
+ .mainFacilities > h2 {
+	font-weight: 300;
+	font-size: 40px;
+ }
+
+ .mainFacilitiesInner {
+	width: 60%;
+	height: 45%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+ }
+
+ .mainFacilitiesInner > div {
+	width: 20%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 18px;
+ }
+
+ .mainAboutUs {
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	position: relative;
+ }
+
+ .aboutUsLeft , .aboutUsRight {
+	width: 50%;
+	height: 100%;
+	background-image: url(./img/aboutUsLeft.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+ }
+
+ .aboutUsRight {
+	background-image: url(./img/aboutUsRight.png);
+ }
+
+ .moreAboutUs {
+	font-family:'Open Sans', sans-serif;
+	font-size: 16px;
+	position: absolute;
+	width: 9.3%;
+	height: 30%;
+	background-color: #E9ECE0;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: calc(50% - 15%);
+	left: calc(50% - 4.65%);
+ }
+
+ footer {
+	width: 100%;
+	height: 70vh;
+	background-color: #5B6460;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family:'Open Sans', sans-serif;
+	justify-content: center;
+ }
+
+ .footerInnerTop {
+	width: 80%;
+	height: 30%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+ }
+
+ .footerInnerTop > p {
+	font-size: 16px;
+	font-weight: 600;
+ }
+
+ .footerInnerTop > ul {
+	list-style: none;
+	width: 45%;
+	height: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+ }
+
+ .footerInnerTop > ul > li > a {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 300;
+ }
+
+ .footerInnerCenter {
+	width: 80%;
+	height: 30%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+ }
+
+ .footerInnerForm {
+	width: 40%;
+	height: 70%;
+ }
+
+ .footerInnerForm > form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid white;
+	padding-bottom: .5em;
+ }
+
+
+ .footerInnerForm > form > input[type="text"] {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	font-size: 16px;
+	color: white;
+	font-family:'Open Sans', sans-serif;
+	font-style: italic;
+	font-weight: 100;
+	box-sizing: border-box;
+	padding-left: .1em;
+ }
+
+ .footerInnerForm > form > input[type="text"]::placeholder {
+	font-size: 16px;
+	color: white;
+	font-family:'Open Sans', sans-serif;
+	font-style: italic;
+	font-weight: 100;
+	box-sizing: border-box;
+	padding-left: .1em;
+ }
+
+ .footerInnerForm > form > input[type="button"] {
+	border: none;
+	outline: none;
+	background-image: url(./img/arrow.png);
+	background-color: transparent;
+	transform: rotate(180deg);
+	width: 100%;
+   background-repeat: no-repeat;
+ }
+
+ .footerInnerForm > p {
+	font-family:'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 300;
+ }
+
+ .footerListPay {
+	height: 50%;
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+	align-self: flex-start;
+ }
+
+ .footerInnerBotton {
+	width: 80%;
+	height: 30%;
+	display: flex;
+	align-items: center;
+	color: white;
+	font-family:'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 100;
+ }
